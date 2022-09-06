@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* desktop version start */
+@media (min-width: 576px){
+  .desktopVersion{
+    display: block !important;
+    background: rgb(0,153,255);
+    background: linear-gradient(150deg, rgba(0,153,255,1) 0%, rgba(113,247,255,1) 50%, rgba(0,203,169,1) 100%);
+    background-size: 400%;
+    animation-name: movingBg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 100vh;
+  }
+  @keyframes movingBg {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
+  .mobile{
+    display: block !important;
+    width: 250px !important;
+    font-family: 'Poppins' !important;
+    transition: 0.5s;
+  }
+  .dataTxtWrapper h1, h4, p, a{
+    display: block !important;
+  }
+  .base{
+    display: none;
+  }
+}
+/* desktop version end */
+@media (max-width: 450px){
+  .desktopVersion{
+    display: none !important;
+  }
+  .mobile{
+    display: none !important;
+  }
+  .dataTxtWrapper h1, .dataTxtWrapper h4, .dataTxtWrapper p, .dataTxtWrapper a{
+    display: none !important;
+  }
+  *{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .base{
+    height: 100vh;
+  }
+  .arrowWrapper{
+    top: 20px;
+    left: 20px;
+    z-index: 90;
+  }
+  main{
+    height: 100vh;
+  }
+  .fbWrapper{
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.74);
+  }
+  .alertWrapper{
+    height: 40px !important;
+    background: rgba(254, 248, 213, 0.77);
+    border: 1px solid rgba(240, 157, 121, 1);
+  }
+  form{
+    width: 300px !important;
+  }
+  li, .alertWrapper{
+    width: 360px !important;
+  }
+  input{
+    border: 1px solid rgba(224, 224, 224, 1) !important;
+  }
+  .wave{
+    z-index: -90;
+  }
+}
+
+@media (max-width: 420px){
+  .fbWrapper{
+    width: 330px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.74);
+  }
+  li, .alertWrapper{
+    width: 300px !important;
+  }
+}

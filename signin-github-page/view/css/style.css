@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* desktop version start */
+@media (min-width: 576px){
+  .desktopVersion{
+    display: block !important;
+    background: rgb(0,153,255);
+    background: linear-gradient(150deg, rgba(0,153,255,1) 0%, rgba(113,247,255,1) 50%, rgba(0,203,169,1) 100%);
+    background-size: 400%;
+    animation-name: movingBg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 100vh;
+  }
+  @keyframes movingBg {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
+  .mobile{
+    display: block !important;
+    width: 250px !important;
+    font-family: 'Poppins' !important;
+    transition: 0.5s;
+  }
+  .dataTxtWrapper h1, h4, p, a{
+    display: block !important;
+  }
+  .base{
+    display: none;
+  }
+}
+/* desktop version end */
+@media (max-width: 576px){
+  .desktopVersion{
+    display: none !important;
+  }
+  .mobile{
+    display: none !important;
+  }
+  .dataTxtWrapper h1, .dataTxtWrapper h4, .dataTxtWrapper p, .dataTxtWrapper a{
+    display: none !important;
+  }
+  *{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .base{
+    height: 100vh;
+  }
+  .arrowWrapper{
+    top: 20px;
+    left: 20px;
+    z-index: 90;
+  }
+  main{
+    height: 100vh;
+  }
+  .githubWrapper{
+    width: 500px;
+    height: 500px;
+  }
+  .logo{
+    width: 70px !important;
+  }
+  .form ul{
+    width: 310px !important;
+  }
+  .btn{
+    background: #3ECB0C !important;
+  }
+  footer form ul li{
+    margin: 0 10px !important;
+  }
+  .wave{
+    z-index: -90;
+  }
+}
+
+@media (max-width: 375px){
+  .form ul{
+    width: 270px !important;
+  }
+}
+
+@media (max-width: 316px){
+  .form ul{
+    width: 230px !important;
+  }
+}

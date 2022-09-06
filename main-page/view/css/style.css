@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+/* desktop version start */
+@media (min-width: 576px){
+  *{
+    font-family: 'Inter', sans-serif !important;
+  }
+  .desktopVersion{
+    display: block !important;
+    background: rgb(0,153,255);
+    background: linear-gradient(150deg, rgba(0,153,255,1) 0%, rgba(113,247,255,1) 50%, rgba(0,203,169,1) 100%);
+    background-size: 400%;
+    animation-name: movingBg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 100vh;
+  }
+  .desktopVersion button{
+    display: block !important;
+  }
+  @keyframes movingBg {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
+  .mobile{
+    display: block !important;
+    width: 250px !important;
+    font-family: 'Poppins' !important;
+    transition: 0.5s;
+  }
+  .popUpWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.404);
+  }
+  .popUpMenu{
+    width: 400px;
+    height: 300px;
+  }
+  .popUpMenu .whyBtn{
+    width: 0 !important;
+  }
+  .mobileVer{
+    width: 120px;
+  }
+  .sendPostWrapper{
+    display: none !important;
+    top: -900px;
+    background: rgba(51, 51, 51, 1);
+    height: 100vh;
+  }
+  .dataTxtWrapper h1, h4, p, a{
+    display: block !important;
+  }
+  .base{
+    display: none;
+  }
+}
+/* desktop version end */
+@media (max-width: 576px){
+  .desktopVersion{
+    display: none !important;
+  }
+  .desktopVersion button{
+    display: none !important;
+  }
+  .mobile{
+    display: none !important;
+  }
+  .dataTxtWrapper h1, .dataTxtWrapper h4, .dataTxtWrapper p, .dataTxtWrapper a{
+    display: none !important;
+  }
+  *{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Inter', sans-serif !important;
+  }
+  .base{
+    height: 100vh !important;
+  }
+  header{
+    height: 120px;
+    background: rgba(34, 34, 34, 0.04);
+  }
+  .samePp{
+    width: 80px;
+    background:  linear-gradient(white, white) padding-box, linear-gradient(#0085DE , #00CBA9) border-box;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: transparent;
+  }
+  .logoRpl{
+    width: 40px;
+  }
+  .ppRadit,
+  .ppSaya{
+    width: 30px;
+  }
+  .dataTxt{
+    font-size: 12.5px;
+  }
+  .line{
+    width: 5px;
+    height: 35px;
+    background: #EAEAEA;
+  }
+  input{
+    outline: none;
+  }
+  .commandWrapper{
+    transition: all 0.5s;
+    border-radius: 20px 20px 0 0 !important;
+    background: #202020;
+    bottom: -600px;
+    height: 600px;
+    z-index: 210;
+  }
+  .comandInputWrapper{
+    margin-top: 330px !important;
+  }
+  .comandPp{
+    width: 30px;
+  }
+  .commandInput{
+    padding: 15px 0 !important;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .commandInput::placeholder{
+    color: white;
+  }
+  .sendPostWrapper{
+    display: block !important;
+    top: -900px;
+    background: rgba(51, 51, 51, 1);
+    height: 100vh;
+    z-index: 10;
+  }
+  .sendPostWrapper input, .messageWrapper input{
+    padding: 15px 30px !important;
+    width: 330px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .sendPostWrapper input::placeholder, .messageWrapper input::placeholder{
+    color: white;
+  }
+  footer{
+    background: rgb(243, 243, 243);
+    z-index: 200;
+  }
+  footer img{
+    width: 40px;
+  }
+  .myStatusWrapper{
+    top: 0px;
+    height: 100vh;
+    background-image: url('../../assets/status-saya.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    z-index: 90;
+  }
+  .ppStatusSaya{
+    width: 50px;
+  }
+  .diLihatOlehWrapper{
+    top: 85vh;
+  }
+  .diLihatOlehImg{
+    width: 70px;
+  }
+  .diLihatOlehTxt{
+    font-size: 10px;
+  }
+  .StatusAltafWrapper{
+    top: 0px;
+    height: 100vh;
+    background-image: url('../../assets/status-altaf.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    z-index: 90;
+  }
+  .StatusAltafWrapper .caption p{
+    font-family: 'Loved by the King' !important;
+  }
+  .inputWrapper{
+    position: absolute;
+    bottom: 70px;
+  }
+  .StatusAltafWrapper input,
+  .StatusRifkiWrapper input,
+  .StatusBrajaWrapper input{
+    background: rgba(0, 0, 0, 0.24);
+    width: 75vw;
+  }
+  .StatusRifkiWrapper{
+    top: 0px;
+    height: 100vh;
+    background-image: url('../../assets/status-rifki.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 63%;
+    display: none;
+    z-index: 90;
+  }
+  .StatusBrajaWrapper{
+    top: 0px;
+    height: 100vh;
+    background-image: url('../../assets/status-braja.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    z-index: 90;
+  }
+  .searchSection{
+    height: 100vh !important;
+    z-index: 100;
+  }
+  .searchSection .inputSearchWrapper{
+    background: #E9E9E9;
+    width: 76vw !important;
+  }
+  .galeryWrapper{
+    overflow-y: scroll;
+    height: 77vh;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .galeryWrapper1{
+    display: grid;
+    grid-template-areas: "gambarJuara gambarPeralatan"
+                          "gambarNathan gambarPeralatan";
+    grid-template-rows: 130px 130px;
+    grid-template-columns: 3fr 2fr;
+  }
+  .gambarJuara{
+    grid-area: gambarJuara;
+    background: url('../../assets/juara.png');
+    background-size: cover;
+  }
+  .gambarNathan{
+    grid-area: gambarNathan;
+    background: url('../../assets/nathan.jpg');
+    background-size: cover;
+  }
+  .gambarPeralatan{
+    grid-area: gambarPeralatan;
+    background: url('../../assets/peralatan.jpg');
+    background-size: cover;
+  }
+  .galeryWrapper2{
+    display: grid;
+    grid-template-areas: "gambarRifki gambarPameran"
+                          "gambarRifki gambarMakan";
+    grid-template-rows: 130px 130px;
+    grid-template-columns: 2fr 3fr;
+  }
+  .gambarRifki{
+    grid-area: gambarRifki;
+    background: url('../../assets/status-rifki.JPG');
+    background-size: cover;
+    background-position-x: 65%;
+  }
+  .gambarPameran{
+    grid-area: gambarPameran;
+    background: url('../../assets/pameran.JPG');
+    background-size: cover;
+  }
+  .gambarMakan{
+    grid-area: gambarMakan;
+    background: url('../../assets/makan.JPG');
+    background-size: cover;
+  }
+  .galeryWrapper3{
+    display: grid;
+    grid-template-areas: "gambarMartikulasi";
+    grid-template-rows: 130px;
+    grid-template-columns: auto;
+  }
+  .gambarMartikulasi{
+    grid-area: gambarMartikulasi;
+    background: url('../../assets/martikulasi.jpeg');
+    background-size: cover;
+    background-position-y: 55%;
+  }
+  .galeryWrapper4{
+    display: grid;
+    grid-template-areas: "gambarHafiz gambarJere"
+                        "gambarPanitia gambarJere";
+    grid-template-rows: 130px 130px;
+    grid-template-columns: 3fr 2fr;
+  }
+  .gambarHafiz{
+    grid-area: gambarHafiz;
+    background: url('../../assets/gambar-hafiz.JPG');
+    background-size: cover;
+  }
+  .gambarPanitia{
+    grid-area: gambarPanitia;
+    background: url('../../assets/panitia.jpeg');
+    background-size: cover;
+  }
+  .gambarJere{
+    grid-area: gambarJere;
+    background: url('../../assets/gambar-jere.jpg');
+    background-position-x: 50%;
+    background-size: cover;
+  }
+  .galeryWrapper5{
+    display: grid;
+    grid-template-areas: "gambarEsa";
+    grid-template-rows: 130px;
+    grid-template-columns: auto;
+  }
+  .gambarEsa{
+    grid-area: gambarEsa;
+    background: url('../../assets/gambar-esa.jpg');
+    background-size: cover;
+  }
+  .galeryWrapper6{
+    display: grid;
+    grid-template-areas: "gambarMpls gambarPakYusuf"
+                        "gambarMpls gambarOsis";
+    grid-template-rows: 130px 130px;
+    grid-template-columns: 2fr 3fr;
+  }
+  .gambarPakYusuf{
+    grid-area: gambarPakYusuf;
+    background: url('../../assets/gambar-pakYusuf.jpg');
+    background-size: cover;
+  }
+  .gambarOsis{
+    grid-area: gambarOsis;
+    background: url('../../assets/gambar-osis.png');
+    background-size: cover;
+  }
+  .gambarMpls{
+    grid-area: gambarMpls;
+    background: url('../../assets/gambar-mpls.png');
+    background-size: cover;
+  }
+  .messageWrapper{
+    display: block !important;
+    background: rgba(51, 51, 51, 1);
+    height: 100vh;
+    z-index: 100;
+  }
+  .deasyMessageWrapper, .gresMessageWrapper, .farisMessageWrapper{
+    left: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(51, 51, 51, 1);
+  }
+  .deasyMessageWrapper header, .gresMessageWrapper header, .farisMessageWrapper header{
+    background: #303030;
+  }
+  .deasyMessageWrapper main, .gresMessageWrapper main, .farisMessageWrapper main{
+    height: 62vh;
+  }
+  .deasyMessageWrapper .text1{
+    border-radius: 20px 20px 20px 0;
+    padding: 5px 0 5px 15px !important;
+    background: #4A4A4A;
+    width: 85px;
+  }
+  .deasyMessageWrapper .text2{
+    border-radius: 20px 20px 0 20px;
+    padding: 5px 0 5px 15px !important;
+    background: #4A4A4A;
+    width: 80px;
+  }
+  .deasyMessageWrapper .timeInText1, .gresMessageWrapper .timeInText1, .farisMessageWrapper .timeInText1{
+    font-size: 10px;
+  }
+  .deasyMessageWrapper .timeInText2, .gresMessageWrapper .timeInText2, .farisMessageWrapper .timeInText2{
+    font-size: 10px;
+  }
+  .kirimPesanWrapper{
+    background: transparent;
+  }
+  .kirimPesanWrapper .kirimPesanInput{
+    background: #0000003D;
+  }
+  .kirimPesanWrapper .kirimPesanInput{
+    width: 72vw;
+  }
+  .gresMessageWrapper .text1{
+    border-radius: 20px 20px 20px 0;
+    padding: 5px 0 5px 15px !important;
+    background: #4A4A4A;
+    width: 250px;
+  }
+  .gresMessageWrapper .text2{
+    border-radius: 20px 20px 0 20px;
+    padding: 5px 0 5px 15px !important;
+    background: #4A4A4A;
+    width: 130px;
+  }
+}
+
+@media (max-width: 531px){
+  .commandInput{
+    padding: 15px 0 !important;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .sendPostWrapper input, .messageWrapper input{
+    padding: 15px 30px !important;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+@media (max-width: 478px){
+  .commandInput{
+    padding: 15px 0 !important;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .sendPostWrapper input, .messageWrapper input{
+    padding: 15px 30px !important;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+@media (max-width: 436px){
+  .commandInput{
+    padding: 15px 0 !important;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .sendPostWrapper input, .messageWrapper input{
+    padding: 15px 30px !important;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+@media (max-width: 401px){
+  .commandInput{
+    padding: 15px 0 !important;
+    width: 290px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .sendPostWrapper input, .messageWrapper input{
+    padding: 15px 30px !important;
+    width: 290px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+@media (max-width: 360px){
+  .commandInput{
+    padding: 15px 0 !important;
+    width: 240px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .sendPostWrapper input, .messageWrapper input{
+    padding: 15px 30px !important;
+    width: 240px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .kirimPesanWrapper .kirimPesanInput{
+    width: 68vw;
+  }
+}
+
+@media (max-width: 316px){
+  .commandInput{
+    padding: 15px 0 !important;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  .sendPostWrapper input, .messageWrapper input{
+    padding: 15px 30px !important;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple</title>
+  <!-- vanila css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="m-0 p-0 overflow-hidden">
+  <!-- desktop version start -->
+  <div class="desktopVersion d-flex justify-content-center align-items-center">
+    <div class="dataWrapper d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-sm-column justify-content-center align-items-center">
+      <img data-aos="fade-right" data-aos-duration="2000" class="mobile" src="../../assets/mobile-removebg-preview-removebg-preview.png" alt="">
+      <div class="dataTxtWrapper ms-xxl-5 ms-xl-5 ms-lg-5 ms-md-5 ms-sm-0 mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-0 mt-sm-5 d-flex flex-column text-light text-xxl-start text-xl-start text-lg-start text-md-start text-sm-center">
+        <h1 data-aos="fade-down" data-aos-duration="2300" class="text-dark fw-bold display-3">Simple</h1>
+        <h4 data-aos="fade-left" data-aos-duration="2500" class="fw-light">Best social media in the world!</h4>
+        <p data-aos="fade-left" data-aos-duration="3000">This app just for mobile, Get this app now!</p>
+        <button target="" href="" id="toogle" data-aos="fade-up" data-aos-duration="2700" class="btn btn-primary w-50 mt-3 ms-xxl-0 ms-xl-0 ms-lg-0 ms-md-0 m-sm-auto">Get started</button>
+      </div>
+    </div>
+    <div class="popUpWrapper container-fluid position-absolute">
+      <div class="popUpMenu bg-light rounded-3 shadow-lg position-absolute p-2">
+        <header class="d-flex justify-content-end">
+          <div>
+            <i id="exitPopUp" class="text-muted" data-feather="x"></i>
+          </div>
+        </header>
+        <main class="text-center px-xxl-2 px-xl-2 px-lg-3 px-md-2 px-sm-0 d-flex flex-row justify-content-center align-items-cente">
+          <div class="d-flex flex-row justify-content-center align-items-center">
+            <div>
+              <img class="mobileVer" src="../../assets/mobile (1).png" alt="">
+            </div>
+            <div class="text-start ms-3">
+              <p>I'm sorry, this app just create for <span class="fw-bold text-primary">mobile</span>. you can change your device width to <span class="fw-bold text-primary">576px.</span> <br> <span class="hiddenTxt text-danger">the less you know, the better</span></p>
+              <a style="cursor: pointer;" class="whyBtn w-25 text-center text-decoration-none">why?</a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <!-- desktop version end -->
+  <div class="sendPostWrapper position-absolute container-fluid text-light pt-4 px-4">
+    <div class="text-start">
+      <h1 class="display-2 fw-bold">Send to</h1>
+    </div>
+    <div class="d-flex flex-row justify-content-between align-items-center mt-4">
+      <form action="">
+        <input class="rounded-pill border-0" type="text" placeholder="cari teman">
+      </form>
+      <div>
+        <a class="text-decoration-none text-light" href="">Cari</a>
+      </div>
+    </div>
+    <div class="mt-4">
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <img src="../../assets/desi.png" alt="">
+          </div>
+          <div class="ms-3">
+            <p><span class="fw-bold">dddesy</span> <br> <span class="text-muted">online 3 jam yang lalu</span></p>
+          </div>
+        </div>
+        <div>
+          <i data-feather="phone"></i>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between align-items-center mt-4">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <img src="../../assets/gres.png" alt="">
+          </div>
+          <div class="ms-3">
+            <p><span class="fw-bold">gres_angl</span> <br> <span class="text-info">online</span></p>
+          </div>
+        </div>
+        <div>
+          <i data-feather="phone"></i>
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-between align-items-center mt-4">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <img src="../../assets/faris.png" alt="">
+          </div>
+          <div class="ms-3">
+            <p><span class="fw-bold">farisfdlh</span> <br> <span class="text-info">online</span></p>
+          </div>
+        </div>
+        <div>
+          <i data-feather="phone"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="searchSection container-fluid position-absolute bg-light p-3">
+    <div class="d-flex flex-row justify-content-between align-items-center">
+      <div class="inputSearchWrapper rounded-pill d-flex flex-row align-items-center justify-content-start ps-3 py-3">
+        <i style="color: #888888;" data-feather="search"></i>
+        <form class="ms-2" action="">
+          <input class="border-0 bg-transparent" type="text" placeholder="Cari">
+        </form>
+      </div>
+      <div> 
+        <a class="text-decoration-none text-dark fw-light fs-5" href="">Cari</a>
+      </div>
+    </div>
+    <div class="galeryWrapper mt-3 p-1">
+      <div class="galeryWrapper1">
+        <div class="gambarJuara border border-3 border-light"></div>
+        <div class="gambarNathan border border-3 border-light"></div>
+        <div class="gambarPeralatan border border-3 border-light"></div>
+      </div>
+      <div class="galeryWrapper2">
+        <div class="gambarPameran border border-3 border-light"></div>
+        <div class="gambarMakan border border-3 border-light"></div>
+        <div class="gambarRifki border border-3 border-light"></div>
+      </div>
+      <div class="galeryWrapper3">
+        <div class="gambarMartikulasi border border-3 border-light"></div>
+      </div>
+      <div class="galeryWrapper4">
+        <div class="gambarHafiz border border-3 border-light"></div>
+        <div class="gambarPanitia border border-3 border-light"></div>
+        <div class="gambarJere border border-3 border-light"></div>
+      </div>
+      <div class="galeryWrapper5">
+        <div class="gambarEsa border border-3 border-light"></div>
+      </div>
+      <div class="galeryWrapper6">
+        <div class="gambarMpls border border-3 border-light"></div>
+        <div class="gambarPakYusuf border border-3 border-light"></div>
+        <div class="gambarOsis border border-3 border-light"></div>
+      </div>
+    </div>
+  </div>
+  <div class="messageWrapper position-absolute container-fluid text-light pt-4 px-4">
+    <div class="text-start">
+      <h1 class="display-2 fw-bold">Messages</h1>
+    </div>
+    <div class="d-flex flex-row justify-content-between align-items-center mt-4">
+      <form action="">
+        <input class="rounded-pill border-0" type="text" placeholder="cari teman">
+      </form>
+      <div>
+        <a class="text-decoration-none text-light" href="">Cari</a>
+      </div>
+    </div>
+    <div class="mt-4">
+      <div id="deasyMessage" class="d-flex flex-row justify-content-between align-items-center">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <img src="../../assets/desi.png" alt="">
+          </div>
+          <div class="ms-3">
+            <p><span class="fw-bold">dddesy</span> <br> <span class="text-muted">online 3 jam yang lalu</span></p>
+          </div>
+        </div>
+        <div>
+          <i data-feather="phone"></i>
+        </div>
+      </div>
+      <div id="gresMessage" class="d-flex flex-row justify-content-between align-items-center mt-4">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <img src="../../assets/gres.png" alt="">
+          </div>
+          <div class="ms-3">
+            <p><span class="fw-bold">gres_angl</span> <br> <span class="text-info">online</span></p>
+          </div>
+        </div>
+        <div>
+          <i data-feather="phone"></i>
+        </div>
+      </div>
+      <div id="farisMessage" class="d-flex flex-row justify-content-between align-items-center mt-4">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <img src="../../assets/faris.png" alt="">
+          </div>      
+          <div class="ms-3">
+            <p><span class="fw-bold">farisfdlh</span> <br> <span class="text-info">online</span></p>
+          </div>
+        </div>
+        <div>
+          <i data-feather="phone"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="deasyMessageWrapper position-absolute container-fluid">
+    <header class="text-light d-flex flex-row justify-content-between align-items-center px-4">
+      <div class="d-flex flex-row align-items-center">
+        <div>
+          <img src="../../assets/desi.png" alt="">
+        </div>
+        <div class="ms-3">
+          <p><span class="fw-bold">dddesy</span> <br> online 3 jam yang lalu</p>
+        </div>
+      </div>
+      <div>
+        <i data-feather="phone"></i>
+      </div>
+    </header>
+    <main class="container-fluid px-4">
+      <div class="text-center mt-3">
+        <p class="text-light fw-bold fs-5">Today</p>
+      </div>
+      <div class="text-light fs-5">
+        <div class="text1">
+          <p>joo <span class="timeInText1">01:23</span></p>
+        </div>
+        <div class="text2 mt-4 float-end">
+          <p>? <span class="timeInText2">01:30</span></p>
+        </div>
+      </div>
+    </main>
+    <footer class="kirimPesanWrapper w-100 px-4 d-flex flex-row justify-content-between align-items-center">
+      <div>
+        <form action="">
+          <input class="kirimPesanInput border border-0 rounded-pill ps-4 py-3 text-muted" type="text" placeholder="Kirim pesan">
+        </form>
+      </div>
+      <div>
+        <a class="text-decoration-none text-light" href="">Send</a>
+      </div>
+    </footer>
+  </div>
+  <div class="gresMessageWrapper position-absolute container-fluid">
+    <header class="text-light d-flex flex-row justify-content-between align-items-center px-4">
+      <div class="d-flex flex-row align-items-center">
+        <div>
+          <img src="../../assets/ngaf-gres.png" alt="">
+        </div>
+        <div class="ms-3">
+          <p><span class="fw-bold">gres_angl</span> <br> <span class="text-info">online</span></p>
+        </div>
+      </div>
+      <div>
+        <i data-feather="phone"></i>
+      </div>
+    </header>
+    <main class="container-fluid px-4">
+      <div class="text-center mt-3">
+        <p class="text-light fw-bold fs-5">Today</p>
+      </div>
+      <div class="text-light fs-5">
+        <div class="text1">
+          <p>ngaff, cb wasaff pak ucuf <span class="timeInText1">12:23</span></p>
+        </div>
+        <div class="text2 mt-4 float-end">
+          <p>yh ngaf <span class="timeInText2">12:30</span></p>
+        </div>
+      </div>
+    </main>
+    <footer class="kirimPesanWrapper w-100 px-4 d-flex flex-row justify-content-between align-items-center">
+      <div>
+        <form action="">
+          <input class="kirimPesanInput border border-0 rounded-pill ps-4 py-3 text-muted" type="text" placeholder="Kirim pesan">
+        </form>
+      </div>
+      <div>
+        <a class="text-decoration-none text-light" href="">Send</a>
+      </div>
+    </footer>
+  </div>
+  <div class="farisMessageWrapper position-absolute container-fluid">
+    <header class="text-light d-flex flex-row justify-content-between align-items-center px-4">
+      <div class="d-flex flex-row align-items-center">
+        <div>
+          <img src="../../assets/ngaf-faris.png" alt="">
+        </div>
+        <div class="ms-3">
+          <p><span class="fw-bold">farisfdlh</span> <br> <span class="text-info">online</span></p>
+        </div>
+      </div>
+      <div>
+        <i data-feather="phone"></i>
+      </div>
+    </header>
+    <main class="container-fluid px-4"></main>
+    <footer class="kirimPesanWrapper w-100 px-4 d-flex flex-row justify-content-between align-items-center">
+      <div>
+        <form action="">
+          <input class="kirimPesanInput border border-0 rounded-pill ps-4 py-3 text-muted" type="text" placeholder="Kirim pesan">
+        </form>
+      </div>
+      <div>
+        <a class="text-decoration-none text-light" href="">Send</a>
+      </div>
+    </footer>
+  </div>
+  <!-- my status start -->
+  <div class="myStatusWrapper container-fluid position-absolute">
+    <div class="slideStatusSaya container-fluid position-absolute end-0 w-50 h-100"></div>
+    <div class="m-3">
+      <div class="d-flex align-items-center">
+        <div>
+          <img class="img-fluid ppStatusSaya" src="../../assets/saya.png" alt="">
+        </div>
+        <div class="ms-3">
+          <p class="text-light"><span class="fw-bold">joan</span> 2 jam yang lalu</p>
+        </div>
+      </div>
+      <div class="text-end mt-5">
+        <p class="text-light fw-bold display-2">Smoga <br> menang</p>
+      </div>
+      <div class="text-start diLihatOlehWrapper position-absolute">
+        <img class="diLihatOlehImg" src="../../assets/dilihat oleh.png" alt="">
+        <p class="diLihatOlehTxt text-light">dilihat oleh</p>
+      </div>
+    </div>
+  </div>
+  <!-- my status end -->
+  <!-- altaf status start -->
+  <div class="StatusAltafWrapper container-fluid position-absolute px-3 py-3">
+    <div class="slideKiriAltaf container-fluid position-absolute top-0 start-0 w-50 h-100"></div>
+    <div class="slideKananAltaf container-fluid position-absolute top-0 end-0 w-50 h-100"></div>
+    <div class="m-3">
+      <div class="d-flex align-items-center">
+        <div>
+          <img class="img-fluid ppStatusSaya" src="../../assets/altaf.png" alt="">
+        </div>
+        <div class="ms-3">
+          <p class="text-light"><span class="fw-bold">altf_chan</span> 23 menit yang lalu</p>
+        </div>
+      </div>
+      <div class="caption text-start mt-5">
+        <p class="text-light fw-bold display-2">Hari' mengejar nilai <br> yang tidak menjanjikan <br> untuk kesuksesan</p>
+      </div>
+      <div class="inputWrapper d-flex flex-row align-items-center">
+        <form action="">
+          <input class="py-3 ps-4 border-0 rounded-pill" type="text" placeholder="Kirim Pesan">
+        </form>
+        <div class="ms-3">
+          <i id="likeStatus" data-feather="thumbs-up"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- altaf status end -->
+  <!-- rifki status start -->
+  <div class="StatusRifkiWrapper container-fluid position-absolute px-3 py-3">
+    <div class="slideKiriRifki container-fluid position-absolute top-0 start-0 w-50 h-100"></div>
+    <div class="slideKananRifki container-fluid position-absolute top-0 end-0 w-50 h-100"></div>
+    <div class="m-3">
+      <div class="d-flex align-items-center">
+        <div>
+          <img class="img-fluid ppStatusSaya" src="../../assets/rifki.png" alt="">
+        </div>
+        <div class="ms-3">
+          <p class="text-light"><span class="fw-bold">rifki.kelaz</span> 15 menit yang lalu</p>
+        </div>
+      </div>
+      <div class="content text-center mt-5">
+        <p class="text-light fw-light display-2">Me and<br> my fren XD</p>
+      </div>
+      <div class="inputWrapper d-flex flex-row align-items-center">
+        <form action="">
+          <input class="py-3 ps-4 border-0 rounded-pill" type="text" placeholder="Kirim Pesan">
+        </form>
+        <div class="ms-3">
+          <i id="likeStatus" data-feather="thumbs-up"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- rifki status end -->
+  <!-- braja status start -->
+  <div class="StatusBrajaWrapper container-fluid position-absolute px-3 py-3">
+    <div class="slideKiriBraja container-fluid position-absolute top-0 start-0 w-50 h-100"></div>
+    <div class="m-3">
+      <div class="d-flex align-items-center">
+        <div>
+          <img class="img-fluid ppStatusSaya" src="../../assets/braja.png" alt="">
+        </div>
+        <div class="ms-3">
+          <p class="text-light"><span class="fw-bold">brajah</span> 1 menit yang lalu</p>
+        </div>
+      </div>
+      <div class="inputWrapper d-flex flex-row align-items-center">
+        <form action="">
+          <input class="py-3 ps-4 border-0 rounded-pill" type="text" placeholder="Kirim Pesan">
+        </form>
+        <div class="ms-3">
+          <i id="likeStatus" data-feather="thumbs-up"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- braja status end -->
+  <div class="base position-absolute container-fluid">
+    <header class="container-fluid py-3">
+      <div class="w-100 h-100 d-flex flex-row justify-content-evenly align-items-center">
+        <div class="status1Wrapper">
+          <div class="ppWrapper statusSayaPp">
+            <img class="samePp" src="../../assets/saya.png" alt="">
+          </div>
+          <div class="text-center">
+            <p class="text-muted">My status</p>
+          </div>
+        </div>
+        <div class="status2Wrapper ms-2">
+          <div class="ppWrapper statusAltafPp">
+            <img class="samePp" src="../../assets/altaf.png" alt="">
+          </div>
+          <div class="text-center">
+            <p class="text-muted">altf_chan</p>
+          </div>
+        </div>
+        <div class="status3Wrapper ms-2">
+          <div class="ppWrapper statusRifkiPp">
+            <img class="samePp" src="../../assets/rifki.png" alt="">
+          </div>
+          <div class="text-center">
+            <p class="text-muted">rifki.kelas</p>
+          </div>
+        </div>
+        <div class="status4Wrapper ms-2">
+          <div class="ppWrapper statusBrajaPp">
+            <img class="samePp" src="../../assets/braja.png" alt="">
+          </div>
+          <div class="text-center">
+            <p class="text-muted">braja</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="px-3">
+      <div>
+        <div class="d-flex flex-row align-items-center justify-content-between">
+          <div class="d-flex flex-row align-items-center">
+            <img class="logoRpl" src="../../assets/lofo rpl.png" alt="">
+            <p class="fw-bold ms-2">rpl_lucu</p>
+          </div>
+          <div>
+            <img src="../../assets/menu.png" alt="">
+          </div>
+        </div>
+        <div class="text-center mt-2">
+          <img class="img-fluid" src="../../assets/postingan.png" alt="">
+        </div>
+        <div class="text-start mt-2">
+          <i id="like" data-feather="thumbs-up"></i>
+          <i id="command" class="ms-2" data-feather="message-circle"></i>
+          <i id="share" class="ms-2" data-feather="send"></i>
+        </div>
+        <div class="d-flex flex-row justify-content-start align-items-center mt-3">
+          <img class="ppRadit" src="../../assets/radit.png" alt="">
+          <p class="dataTxt text-muted ms-2"><span class="fw-bold">radithh_wk</span> dan 1500 orang lainnya menyukai postingan ini</p>
+        </div>
+        <div class="text-start">
+          <p class="text-dark"><span class="fw-bold">rpl_lucu</span> ril chuyy 😅</p>
+          <p class="text-muted">Lihat semua komentar</p>
+          <div>
+            <p><span class="fw-bold">radithh_wk</span> AWOKAWOK 💀</p>
+            <div class="d-flex flex-row justify-content-start align-items-center ms-2">
+              <div class="line"></div>
+              <p class="ms-2"><span class="fw-bold">rpl_lucu</span> xixixi</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row align-items-center justify-content-between mt-2">
+          <div class="d-flex align-items-center">
+            <img class="ppSaya" src="../../assets/saya.png" alt="">
+            <form class="ms-2" action="">
+              <input class="bg-transparent border-0" type="text" placeholder="Tambahkan komentar">
+            </form>
+          </div>
+          <p>🤣😎</p>
+        </div>
+      </div>
+    </main>
+    <footer class="bottomBar container-fluid position-fixed bottom-0 py-2 d-flex flex-row justify-content-evenly align-items-center">
+        <i id="home" data-feather="home"></i>
+        <i id="search" data-feather="search"></i>
+        <i id="message" data-feather="send"></i>
+        <img id="accToggle" class="img-fluid" src="../../assets/saya.png" alt="">
+    </footer>
+    <div class="commandWrapper container-fluid position-absolute text-light">
+      <div class="text-light d-flex flex-row justify-content-between align-items-center px-4 pt-4">
+        <h1 class="fs-3">Commentar</h1>
+        <i id="exit" data-feather="x"></i>
+      </div>
+      <hr class="bg-light mt-3">
+      <div class="ps-3 pt-2">
+        <div class="firstCommentar d-flex flex-row align-items-center">
+          <div>
+            <img class="comandPp img-fluid" src="../../assets/lofo rpl.png" alt="">
+          </div>
+          <div class="d-flex flex-column justify-content-center ms-3">
+            <div>
+              <p><span class="fw-bold">rpl_lucu</span> ril chuyy 😅</p>
+            </div>
+            <div>
+              <ul class="d-flex flex-row">
+                <li class="list-unstyled">5 hari</li>
+                <li class="ms-2 list-unstyled">balas</li>
+                <li class="ms-2 list-unstyled">kirim</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="secondCommentar d-flex flex-row align-items-center mt-3">
+          <div>
+            <img class="comandPp img-fluid" src="../../assets/radit.png" alt="">
+          </div>
+          <div class="d-flex flex-column justify-content-center ms-3">
+            <div>
+              <p><span class="fw-bold">radithh_wk</span> AWOKAWOK 💀</p>
+            </div>
+            <div>
+              <ul class="d-flex flex-row">
+                <li class="list-unstyled">5 hari</li>
+                <li class="ms-2 list-unstyled">balas</li>
+                <li class="ms-2 list-unstyled">kirim</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comandInputWrapper d-flex flex-row justify-content-between align-items-center px-3">
+        <form action="">
+          <ul>
+            <li class="list-unstyled">
+              <input class="commandInput rounded-pill border-0 ps-4" type="text" placeholder="Tambah komentar">
+            </li>
+          </ul>
+        </form>
+        <div>
+          <a class="text-light text-decoration-none" href="">Kirim</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- feather icons -->
+  <script src="../../../node_modules/feather-icons/dist/feather.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    feather.replace()
+    AOS.init();
+  </script>
+  <!-- magic js -->
+  <script src="../javascript/magic.js"></script>
+</body>
+</html>

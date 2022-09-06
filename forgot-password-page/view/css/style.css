@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@media (min-width: 450px){
+  .nothingTxt::before{
+    content: "nothing :)";
+    font-family: 'Poppins' !important;
+    line-height: 100vh;
+  }
+  .base{
+    display: none;
+  } 
+}
+@media (max-width: 450px){
+  *{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .base{
+    height: 100vh;
+  }
+  .titleWrapper{
+    width: 300px !important;
+  }
+  .arrowWrapper{
+    top: 20px;
+    left: 20px;
+    z-index: 90;
+  }
+  main{
+    height: 100vh;
+  }
+  .forgorPasswordWrapper{
+    height: 100vh;
+  }
+  .signUpBtn{
+    background: #4F76DC !important;
+  }
+  .signUpBtn:hover{
+    background: #3DA2FF !important;
+  }
+  li{
+    width: 310px;
+    background: hsl(0, 0%, 93%);
+  }
+  ::placeholder{
+    font-size: 17px;
+  }
+  .eyeWrapper{
+    margin-left: 30px !important;
+  }
+  .btn{
+    width: 310px;
+    background: #4F76DC !important;
+  }
+  .btn:hover{
+    background: #3DA2FF !important;
+  }
+  .wave{
+    z-index: -90;
+  }
+}
